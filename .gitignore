@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 #Files
-src/components/MyCounter.jsx
+src/components/Test

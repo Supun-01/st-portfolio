@@ -1,35 +1,49 @@
-import React, { useState } from 'react';
+import { useState } from "react";
+import { IoMdMenu } from "react-icons/io";
 
-function Navbar() {
+function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
 
+    const menuButtonTracker = () => {
+        setIsOpen(!isOpen);
+        console.log(isOpen);
+    };
+
+    const navBarLinks = (
+        <div className="md:space-x-4">
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">Home</a>
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">About</a>
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">Services</a>
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">Contact</a>
+        </div>
+    );
+
     return (
-        <nav className="bg-blue-500 p-4">
-            <div className="container mx-auto flex items-center justify-between">
-                <h1 className="text-white text-lg font-bold">My Website</h1>
-                <div className="hidden md:flex space-x-6">
-                    <a href="#home" className="text-white">Home</a>
-                    <a href="#about" className="text-white">About</a>
-                    <a href="#services" className="text-white">Services</a>
-                    <a href="#contact" className="text-white">Contact</a>
+        <nav className="bg-blue-gray-200 p-4">
+            <div className="flex flex-wrap justify-between items-center container mx-auto">
+                <div>
+                    <h1 className="text-2xl">MyFirst</h1>
                 </div>
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="md:hidden text-white"
-                >
-                    Menu
-                </button>
+                <div className="hidden md:block">
+                    {navBarLinks}
+                </div>
+
+                <div className="md:hidden border border-black flex p-1 rounded-lg ">
+                    <button onClick={menuButtonTracker}>
+                        <IoMdMenu className="text-2xl" />
+                    </button>
+                </div>
             </div>
 
-            {/* Mobile Menu */}
-            <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
-                <a href="#home" className="block text-white p-2">Home</a>
-                <a href="#about" className="block text-white p-2">About</a>
-                <a href="#services" className="block text-white p-2">Services</a>
-                <a href="#contact" className="block text-white p-2">Contact</a>
+            <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden ${isOpen ? 'max-h-40' : 'max-h-0'}`}
+            >
+                <div className="bg-blue-gray-100 mt-2 p-2 rounded-lg">
+                    {navBarLinks}
+                </div>
             </div>
         </nav>
     );
 }
 
-export default Navbar;
+export default NavBar;
