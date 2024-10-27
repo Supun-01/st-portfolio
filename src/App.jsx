@@ -7,7 +7,6 @@ function App() {
       <NavBar />
       <div className="mx-5 md:mx-10 lg:container lg:mx-auto">
         <HeroSection />
-        <Test />
       </div>
     </div>
   )
