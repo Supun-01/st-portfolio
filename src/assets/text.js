@@ -1,0 +1,1 @@
+export const HeroSectionContent = "Check your browser console for any warnings or errors related to the image loading. It may reveal if the path is incorrect or if there’s an issue with how the image is being imported"

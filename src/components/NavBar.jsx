@@ -10,21 +10,21 @@ function NavBar() {
     };
 
     const navBarLinks = (
-        <div className="md:space-x-4">
-            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">Home</a>
-            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">About</a>
-            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">Services</a>
-            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-pink-900">Contact</a>
+        <div className="md:space-x-4 p-2">
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-cyan-900">Home</a>
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-cyan-900">About</a>
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-cyan-900">Services</a>
+            <a href="#" className="block md:inline transition duration-300 ease-in-out hover:text-cyan-900">Contact</a>
         </div>
     );
 
     return (
-        <nav className="bg-blue-gray-200 p-4">
-            <div className="flex flex-wrap justify-between items-center container mx-auto">
+        <nav className="bg-blue-gray-200 px-5 md:px-10 py-4">
+            <div className="flex flex-wrap lg:container lg:mx-auto justify-between items-center">
                 <div>
                     <h1 className="text-2xl">SupunTharaka</h1>
                 </div>
-                <div className="hidden md:block">
+                <div className="hidden md:block md:text-lg lg:text-xl">
                     {navBarLinks}
                 </div>
 
