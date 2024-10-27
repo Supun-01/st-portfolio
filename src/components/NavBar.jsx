@@ -22,7 +22,7 @@ function NavBar() {
         <nav className="bg-blue-gray-200 p-4">
             <div className="flex flex-wrap justify-between items-center container mx-auto">
                 <div>
-                    <h1 className="text-2xl">MyFirst</h1>
+                    <h1 className="text-2xl">SupunTharaka</h1>
                 </div>
                 <div className="hidden md:block">
                     {navBarLinks}
