@@ -1,5 +1,4 @@
 import NavBar from "./components/NavBar"
-import Test from "./components/Test/Test"
 import HeroSection from "./components/HeroSection"
 
 function App() {
