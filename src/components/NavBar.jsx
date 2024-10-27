@@ -21,7 +21,7 @@ function NavBar() {
     return (
         <nav className="bg-blue-gray-200 px-5 md:px-10 py-4">
             <div className="flex flex-wrap lg:container lg:mx-auto justify-between items-center">
-                <div>
+                <div className=" border-gray-800 rounded-xl">
                     <h1 className="text-2xl">SupunTharaka</h1>
                 </div>
                 <div className="hidden md:block md:text-lg lg:text-xl">

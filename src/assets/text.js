@@ -1,1 +1,3 @@
 export const HeroSectionContent = "Check your browser console for any warnings or errors related to the image loading. It may reveal if the path is incorrect or if there’s an issue with how the image is being imported"
+
+export const cvLink = "https://drive.usercontent.google.com/download?id=1HFq4SgeVQej8x4o7CdfWhiFJRPgE3_MJ&export=download&authuser=0&confirm=t&uuid=cd0f40ae-2060-4b45-b40a-f63fa86e44ce&at=AN_67v0AKCsdlY28Cmw3nZUO_v0u:1730031641500"
