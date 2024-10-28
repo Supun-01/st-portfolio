@@ -1,7 +1,9 @@
 import NavBar from "./components/NavBar"
 import HeroSection from "./components/HeroSection"
 import Technologies from "./components/Technologies"
+import FooterSection from "./components/FooterSection"
 // import Test from "./components/Test/Test"
+// import MyCounter from "./components/Test/MyCounter"
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <HeroSection />
         <Technologies />
         {/* <Test /> */}
+        {/* <MyCounter /> */}
       </div>
+      <FooterSection />
     </div>
   )
 }
