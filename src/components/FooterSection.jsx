@@ -24,7 +24,7 @@ function FooterSection() {
             </div>
 
             <div>
-                <h1 className="text-center p-2">
+                <h1 className="text-center p-2 text-gray-800">
                     © {year} SupunTharaka. All rights reserved.
                 </h1>
             </div>
